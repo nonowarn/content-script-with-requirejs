@@ -1,0 +1,12 @@
+{
+  "name": "Demo for content script with require.js",
+  "version": "0.0",
+  "description": "This is demonstration for how to use require.js in content scripts",
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["lib/require.js", "lib/require-cs.js", "app/main.js"]
+    }
+  ]
+}
